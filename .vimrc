@@ -14,6 +14,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'tpope/vim-commentary'
 Plug 'sheerun/vim-polyglot'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 " Stop acting like classic vi
 set nocompatible            " disable vi compatibility mode
@@ -80,6 +81,8 @@ set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and bracketsñkj
 set relativenumber
+
+colorscheme codedark
 
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
