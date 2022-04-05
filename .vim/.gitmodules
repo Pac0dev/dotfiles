@@ -1,0 +1,82 @@
+[submodule "pack/francisco/start/editorconfig-vim"]
+ 	path = pack/francisco/start/editorconfig-vim
+ 	url = https://github.com/editorconfig/editorconfig-vim
+
+[submodule "pack/francisco/start/nerdtree"]
+ 	path = pack/francisco/start/nerdtree
+ 	url = https://github.com/scrooloose/nerdtree
+
+ [submodule "pack/theme/start/vim-airline"]
+ 	path = pack/theme/start/vim-airline
+ 	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/theme/start/vim-airline-themes"]
+ 	path = pack/theme/start/vim-airline-themes
+ 	url = https://github.com/vim-airline/vim-airline-themes
+
+[submodule "pack/francisco/start/vim-closetag"]
+ 	path = pack/francisco/start/vim-closetag
+ 	url = https://github.com/alvan/vim-closetag
+
+[submodule "pack/theme/start/vim-dim"]
+ 	path = pack/theme/start/vim-dim
+ 	url = https://github.com/jeffkreeftmeijer/vim-dim
+
+[submodule "pack/francisco/start/emmet-vim"]
+ 	path = pack/francisco/start/emmet-vim
+ 	url = https://github.com/mattn/emmet-vim
+
+[submodule "pack/theme/start/goneovim"]
+ 	path = pack/theme/start/goneovim
+ 	url =https://github.com/akiyosi/goneovim.git
+
+
+[submodule "pack/deoplete/start/alchemist.vim"]
+ 	path = pack/deoplete/start/alchemist.vim
+ 	url = https://github.com/slashmili/alchemist.vim
+
+[submodule "pack/deoplete/start/deoplete-clang"]
+ 	path = pack/deoplete/start/deoplete-clang
+ 	url = https://github.com/deoplete-plugins/deoplete-clang
+
+[submodule "pack/deoplete/start/deoplete-jedi"]
+ 	path = pack/deoplete/start/deoplete-jedi
+ 	url = https://github.com/deoplete-plugins/deoplete-jedi
+
+[submodule "pack/deoplete/start/deoplete.nvim"]
+ 	path = pack/deoplete/start/deoplete.nvim
+ 	url = https://github.com/Shougo/deoplete.nvim
+
+[submodule "pack/deoplete/start/LanguageClient-neovim"]
+ 	path = pack/deoplete/start/LanguageClient-neovim
+ 	url = https://github.com/autozimu/LanguageClient-neovim
+
+[submodule "pack/deoplete/start/neco-syntax"]
+ 	path = pack/deoplete/start/neco-syntax
+ 	url = https://github.com/Shougo/neco-syntax
+
+[submodule "pack/deoplete/start/neoinclude.vim"]
+ 	path = pack/deoplete/start/neoinclude.vim
+ 	url = https://github.com/Shougo/neoinclude.vim
+
+
+[submodule "pack/nvim/opt/nvim-yarp"]
+ 	path = pack/nvim/opt/nvim-yarp
+ 	url = https://github.com/roxma/nvim-yarp
+
+[submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
+ 	path = pack/nvim/opt/vim-hug-neovim-rpc
+ 	url = https://github.com/roxma/vim-hug-neovim-rpc
+
+[submodule "pack/deoplete/start/tern_for_vim"]
+ 	path = pack/deoplete/start/tern_for_vim
+	url = https://github.com/ternjs/tern_for_vim.git
+
+[submodule "pack/deoplete/start/deoplete-ternjs"]
+ 	path = pack/deoplete/start/deoplete-ternjs
+	url = https://github.com/carlitux/deoplete-ternjs.git
+
+[submodule "pack/nvim/opt/deoplete.nvim"]
+ 	path = pack/nvim/opt/deoplete.nvim
+	url=https://github.com/Shougo/deoplete.nvim.git
+
+

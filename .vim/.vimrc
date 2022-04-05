@@ -1,23 +1,3 @@
-call plug#begin()
-Plug 'SirVer/ultisnips'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'alvan/vim-closetag'
-Plug 'ervandew/supertab'
-Plug 'kien/ctrlp.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
-Plug 'psliwka/vim-smoothie'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-Plug 'jiangmiao/auto-pairs'
-Plug 'mlaursen/vim-react-snippets'
-Plug 'tpope/vim-commentary'
-Plug 'sheerun/vim-polyglot'
-Plug 'tomasiser/vim-code-dark'
-Plug 'preservim/tagbar'
-call plug#end()
 " Stop acting like classic vi
 set nocompatible            " disable vi compatibility mode
 set history=1000            " increase history size
@@ -25,8 +5,6 @@ set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 set nowritebackup
 let mapleader = ' '
-
-map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 " Enable filetype
 filetype indent plugin on
@@ -86,14 +64,6 @@ set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and bracketsñkj
 set relativenumber
 
-set t_Co=256
-set t_ut=
-colorscheme codedark
-let g:airline_theme= 'codedark'
-" let g:gruvbox_contrast_dark='hard'
-set background=dark
-set cursorline
-
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
@@ -110,22 +80,19 @@ map Ñ <Esc>
 nnoremap s :update<CR>
 "quit
 nnoremap q :q<CR>
+"close buffer
+nnoremap zz :bwipe<CR>
 
 "split window
 nmap sh :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
+
+"SHIT TABS
+nnoremap <silent> <TAB> :bnext<CR>
+nnoremap <silent> <S-TAB> :bnext<CR>
 
 " Resize window
 nmap <left> <C-w><
 nmap <right> <C-w>>
 nmap <up> <C-w>+
 nmap <down> <C-w>
-
-nnoremap <leader>p "+p
-vnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>P "+P
-nnoremap <leader>y "+y
-vnoremap <leader>y "+y
-nnoremap <leader>Y "+y$
-

@@ -1,0 +1,7 @@
+{
+	  "diagnostic.checkCurrentLine": true,
+	  "diagnostic.messageTarget": "float",
+	  "diagnostic.separateRelatedInformationAsDiagnostics": true,
+	  "diagnostic.virtualText": false,
+	  "diagnostic.virtualTextCurrentLineOnly": false
+}

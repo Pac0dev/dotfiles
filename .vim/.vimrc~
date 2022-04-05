@@ -1,0 +1,58 @@
+" Stop acting like classic vi
+set nocompatible            " disable vi compatibility mode
+set history=1000            " increase history size
+set noswapfile              " don't create swapfiles
+set nobackup                " don't backup, use git!
+
+" Enable filetype
+filetype indent plugin on
+
+" Persist undo history between file editing sessions.
+set undofile
+set undodir=~/.vim/undodir
+
+" Modify indenting settings
+set autoindent              " autoindent always ON.
+
+" Modify some other settings about files
+set encoding=utf-8          " always use unicode (god damnit, windows)
+set backspace=indent,eol,start " backspace always works on insert mode
+set hidden
+
+" Mark trailing spaces depending on whether we have a fancy terminal or not
+if &t_Co > 2
+	highlight ExtraWhitespace ctermbg=1
+	match ExtraWhitespace /\s\+$/
+else
+	set listchars=trail:~
+	set list
+endif
+
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
+"esc
+inoremap ñ <Esc>
+inoremap Ñ <Esc>
+cnoremap ñ <Esc>
+cnoremap Ñ <Esc>
+map ñ <Esc>
+map Ñ <Esc>
+
+"save shortcut
+nnoremap s :update<CR>
+"quit
+nnoremap q :q<CR>
+"close buffer
+nnoremap zz :bdelete <CR>
+
+"split window
+nmap sh :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+
+" Resize window
+nmap <left> <C-w><
+nmap <right> <C-w>>
+nmap <up> <C-w>+
+nmap <down> <C-w>
+
